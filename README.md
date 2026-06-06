@@ -4,7 +4,7 @@ Bilingual Java interview notes for Senior Java Backend preparation.
 
 ## Goals
 
-- Prepare answers in Russian and English.
+- Prepare answers in English and Russian.
 - Keep answers concise, practical, and interview-ready.
 - Use pull requests for review.
 - Use AI only for drafts; final answers must be reviewed by humans.
@@ -51,6 +51,13 @@ Each important question should have:
 - Production angle RU
 - Traps / caveats
 - Optional Anki cards
+
+## Language rules
+
+- English answers should sound natural in an interview.
+- Russian answers should be clear, natural, and not word-for-word translations from English.
+- Important technical terms in Russian answers should include the common English term in parentheses when useful, for example `согласованность (consistency)` or `обратное давление (backpressure)`.
+- Add useful terminology to the relevant topic glossary file.
 
 The question title is required in English only. Put it in the `<summary>` line; a separate Russian question field is not required.
 

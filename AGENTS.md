@@ -103,6 +103,7 @@ The question title is required in English only. Do not add a separate Russian qu
 - English answers should sound natural in an interview.
 - Do not translate word-for-word.
 - Prefer common English engineering terms.
+- Important technical terms in Russian answers should include the common English term in parentheses when useful, for example `согласованность (consistency)` or `обратное давление (backpressure)`.
 - Add terminology to the relevant topic glossary file when useful.
 - Prefer per-topic glossary files, for example `docs/topics/18. Databases, SQL, PostgreSQL/18.00. Glossary RU-EN.md`.
 - If a topic does not have a glossary yet, create one in that topic folder instead of using a repository-wide glossary.
