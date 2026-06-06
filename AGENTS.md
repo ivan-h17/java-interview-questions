@@ -102,10 +102,14 @@ The question title is required in English only. Do not add a separate Russian qu
 - Russian answers should be clear and natural.
 - English answers should sound natural in an interview.
 - Do not translate word-for-word.
-- Prefer common English engineering terms.
+- Russian answers should be Russian prose by default. Do not leave English nouns or adjective phrases in the sentence just because the English answer used them.
+- Keep Java identifiers, API names, exception names, tool names, acronyms, and very common engineering terms in English when that is the natural industry form, for example `JVM`, `JDK`, `JIT`, `GC`, `JAR`, `API`, `CI`, `DTO`, `ORM`, `HashMap`, `equals()` or `NullPointerException`.
+- For conceptual terms, prefer the relevant topic glossary's Russian term. Include the English term in parentheses only on first mention when it improves recognition, for example `разрешение перегрузки (overload resolution)` or `идентичность объекта (object identity)`.
+- Avoid mixed-language phrases such as `runtime class`, `meaningful state`, `source-level resolution`, `production issue`, `wrapper type`, or `domain object` in Russian prose when a normal Russian equivalent is clear.
+- Russian Anki cards should be concise Russian. Keep English only for code/API names or one useful parenthetical term.
 - Important technical terms in Russian answers should include the common English term in parentheses when useful, for example `согласованность (consistency)` or `обратное давление (backpressure)`.
 - Add terminology to the relevant topic glossary file when useful.
-- Prefer per-topic glossary files, for example `docs/topics/18. Databases, SQL, PostgreSQL/18.00. Glossary RU-EN.md`.
+- Prefer per-topic glossary files, for example `docs/topics/18. Databases, SQL, PostgreSQL/18.00. Glossary EN-RU.md`.
 - If a topic does not have a glossary yet, create one in that topic folder instead of using a repository-wide glossary.
 
 ## Answer style

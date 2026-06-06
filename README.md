@@ -12,7 +12,7 @@ Bilingual Java interview notes for Senior Java Backend preparation.
 ## Structure
 
 - `docs/topics/` — topic notes.
-- `docs/topics/<topic>/... Glossary RU-EN.md` — topic-local Russian/English terminology.
+- `docs/topics/<topic>/... Glossary EN-RU.md` — topic-local English/Russian terminology.
 - New topic files may start as question-list skeletons and be expanded with reviewed answers over time.
 
 ## Question Lists
