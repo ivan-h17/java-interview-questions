@@ -1,10 +1,10 @@
 # AGENTS.md
 
-## Project goal
+## Project Goal
 
-This repository contains bilingual Java interview notes for Senior Java Backend preparation.
+This repository contains Java interview notes for Senior Java Backend preparation.
 
-## Question sources
+## Question Sources
 
 Use these sources to discover question topics and coverage gaps. Do not copy long verbatim answers from them; write original answers in this repository's format.
 
@@ -12,7 +12,6 @@ Primary sources:
 
 - https://github.com/enhorse/java-interview/tree/master
 - https://github.com/DEBAGanov/interview_questions
-- `questions/Top-20-topics-middle-java-RU.pdf`
 
 Additional public sources for senior-level coverage:
 
@@ -25,7 +24,7 @@ Additional public sources for senior-level coverage:
 - https://www.springjavalab.com/2025/12/system-design-interview-questions-java-microservices.html
 - https://www.algoroq.io/interview-questions/system-design/
 
-When prompted to generate or expand question lists, agents should search the internet for additional current question sources and popular Senior Java Backend interview questions. Prefer recurring topics from multiple sources over isolated lists.
+When prompted to generate or expand question lists, search for additional current question sources and popular Senior Java Backend interview questions. Prefer recurring topics from multiple sources over isolated lists.
 
 Current senior-level topic signals to cross-check:
 
@@ -41,7 +40,7 @@ Current senior-level topic signals to cross-check:
 - Docker / Kubernetes, CI/CD, cloud basics;
 - practical coding, debugging, and production incident scenarios.
 
-## Question quality requirements
+## Question Quality
 
 A question is good for this repository when it helps a Middle/Senior Java Backend candidate explain a real engineering concept clearly in an interview. It should satisfy most of these checks:
 
@@ -57,9 +56,9 @@ A question is good for this repository when it helps a Middle/Senior Java Backen
 Default priority rules:
 
 - No emoji = Priority 1 / required first-pass question.
-- `🧠` = Priority 2 / advanced, detailed, internals-heavy, or second-pass question.
+- Brain-marked question = Priority 2 / advanced, detailed, internals-heavy, or second-pass question.
 - Basic questions can be Priority 1 if they are foundational and a weak answer would hurt a Middle/Senior interview.
-- Use `🧠` for questions that are useful but deeper than normal interview readiness: low-level internals, implementation details, specialized tuning, rare edge cases, or tooling details.
+- Use the brain marker for questions that are useful but deeper than normal interview readiness: low-level internals, implementation details, specialized tuning, rare edge cases, or tooling details.
 
 Do not add or keep a question when:
 
@@ -70,102 +69,102 @@ Do not add or keep a question when:
 - it overlaps strongly with another question and can be merged;
 - it cannot produce useful traps, caveats, or production angle.
 
-When reviewing a question list, agents should:
+When reviewing a question list:
 
 - check for duplicates and near-duplicates;
 - mark missing high-value topics;
-- classify questions as Priority 1 or `🧠`;
+- classify questions as Priority 1 or brain-marked Priority 2;
 - remove or merge low-value questions;
 - use `TODO: verify` if a technical detail needs checking;
 - prefer current, recurring interview signals over isolated blog-list questions.
 
-## Required format for each answered question
+## Answer Format
 
-Every answered question should contain:
+Every answer file should use collapsible question blocks separated by horizontal rules.
 
-- Question EN
-- Short answer EN
-- Short answer RU
-- Interview answer EN
-- Interview answer RU
-- Deep dive EN
-- Deep dive RU
-- Production angle EN
-- Production angle RU
+Each answered question should contain:
+
+- Question title
+- Short answer
+- Interview answer
+- Deep dive
+- Production angle
 - Traps / caveats
 - Optional Anki cards
 
-The question title is required in English only. Do not add a separate Russian question field unless explicitly requested.
+Use this shape:
 
-## Language rules
+```markdown
+---
 
-- Russian answers should be clear and natural.
-- English answers should sound natural in an interview.
-- Do not translate word-for-word.
-- Russian answers should be Russian prose by default. Do not leave English nouns or adjective phrases in the sentence just because the English answer used them.
-- Keep Java identifiers, API names, exception names, tool names, acronyms, and very common engineering terms in English when that is the natural industry form, for example `JVM`, `JDK`, `JIT`, `GC`, `JAR`, `API`, `CI`, `DTO`, `ORM`, `HashMap`, `equals()` or `NullPointerException`.
-- For conceptual terms, prefer the relevant topic glossary's Russian term. Include the English term in parentheses only on first mention when it improves recognition, for example `разрешение перегрузки (overload resolution)` or `идентичность объекта (object identity)`.
-- Avoid mixed-language phrases such as `runtime class`, `meaningful state`, `source-level resolution`, `production issue`, `wrapper type`, or `domain object` in Russian prose when a normal Russian equivalent is clear.
-- Russian Anki cards should be concise Russian. Keep English only for code/API names or one useful parenthetical term.
-- Important technical terms in Russian answers should include the common English term in parentheses when useful, for example `согласованность (consistency)` or `обратное давление (backpressure)`.
-- Add terminology to the relevant topic glossary file when useful.
-- Prefer per-topic glossary files, for example `docs/topics/18. Databases, SQL, PostgreSQL/18.00. Glossary EN-RU.md`.
-- If a topic does not have a glossary yet, create one in that topic folder instead of using a repository-wide glossary.
+<a id="db-area-001"></a>
 
-## Answer style
+<details>
+<summary><strong>DB-AREA-001. Question title?</strong></summary>
+
+#### Short answer
+
+Short answer.
+
+#### Interview answer
+
+Interview-ready answer.
+
+#### Deep dive
+
+Deeper explanation when useful.
+
+#### Production angle
+
+How this matters in production systems.
+
+#### Traps / caveats
+
+- Common trap.
+- Common caveat.
+
+#### Optional Anki
+
+Q: ...
+A: ...
+
+</details>
+
+---
+```
+
+Format rules:
+
+- Keep question titles in `<summary>` so answer files remain navigable with clickable questions and collapsible answers.
+- Put a stable `<a id="..."></a>` anchor before each question block.
+- Put `---` before the first question, between every question, and after the last question.
+- Use plain Markdown inside answer blocks.
+- Do not use a top question index.
+- Do not use HTML tables.
+- Do not use two-column answer layouts.
+- Do not add duplicate translated sections, glossary files, or translated section names.
+
+## Answer Style
 
 Target level: Senior Java Backend Developer.
 
 Good answers should be:
 
 - concise but not shallow;
-- practical;
-- explainable aloud in 1–2 minutes;
+- natural in an interview;
+- explainable aloud in 1-2 minutes;
 - focused on backend development;
-- include common traps and caveats;
-- include examples when useful.
+- practical and production-aware;
+- clear about trade-offs;
+- explicit about common traps and caveats;
+- supported by examples when useful.
 
-## Important topics
+Terminology rules:
 
-- Java Core
-- Collections
-- HashMap / equals / hashCode
-- Multithreading
-- Stream API
-- Exceptions
-- Spring / Spring Boot
-- Transactions
-- Hibernate / JPA
-- PostgreSQL / SQL
-- Kafka
-- REST / HTTP
-- Microservices
-- Docker / Kubernetes
-- Java Core language fundamentals
-- Algorithms / coding interview basics
-- Testing
-- Spring Security / application security
-- System Design basics
-- Redis / caching
-- Observability / monitoring / alerting
-- Production troubleshooting
-- Database migrations / schema evolution
-- HTTP client resilience
-- Event-driven architecture
-- CI/CD
-- Maven / Gradle / dependency management
-- Git / code review
-- Configuration / secrets / feature flags
-- DDD / domain modeling
-- JVM diagnostics / profiling
-- JSON / Jackson / serialization
-- Messaging alternatives and protocols
-- Cloud fundamentals
-- Linux / networking basics
-- Search / Elasticsearch / OpenSearch
-- NoSQL fundamentals
+- Keep Java identifiers, API names, exception names, tool names, acronyms, and common engineering terms in their standard form, for example `JVM`, `JDK`, `JIT`, `GC`, `JAR`, `API`, `CI`, `DTO`, `ORM`, `HashMap`, `equals()` or `NullPointerException`.
+- Avoid vague textbook prose. Prefer concise explanation, concrete examples, trade-offs, and production implications.
 
-## Do not
+## Do Not
 
 - Do not copy long verbatim answers from third-party repositories.
 - Do not invent facts.
@@ -173,8 +172,10 @@ Good answers should be:
 - Do not write huge textbook-style answers.
 - Do not skip traps and edge cases.
 - Do not mark an answer as ready if it was not reviewed.
+- Do not create glossary files.
+- Do not add HTML tables or two-column answer layouts.
 
-## Mark uncertainty
+## Mark Uncertainty
 
 Use:
 
@@ -182,13 +183,12 @@ Use:
 
 when a technical detail needs checking.
 
-## Review checklist
+## Review Checklist
 
 Before finalizing an answer:
 
-- EN answer is natural.
-- RU answer is understandable.
-- The answer can be spoken in 1–2 minutes.
+- The answer reads naturally in an interview.
+- The answer can be spoken in 1-2 minutes.
 - Common traps are included.
 - Technical details are checked.
 - The answer is useful for a real Java backend interview.
